@@ -177,6 +177,9 @@
 	}
 
 	/* Aグループ */
+
+
+
 	header {
 		padding-top: 32px;
 	}
@@ -188,12 +191,18 @@
 	header ul {
 		width: 80%;
 		margin:0 auto;
-		font-size: 0;
+	}
+
+	header ul:after {
+	  content: "";
+	  clear: both;
+	  display: block;
 	}
 
 	header ul li {
 		width: 25%;
-		font-size: 16px;
+		display: block;
+		float: left;
 	}
 
 	header ul a:link,
@@ -205,7 +214,6 @@
 		border-left: 1px solid #fff;
 		background: #000 url(img/arrow_under.gif) no-repeat center bottom 10px;
 		color: #fff;
-		font-size: 1em;
 		letter-spacing: 3px;
 		text-decoration: none;
 		text-align: center;
