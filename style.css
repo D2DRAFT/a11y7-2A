@@ -176,6 +176,67 @@
 		background: none;
 	}
 
+	/* Aグループ */
+	header {
+		padding-top: 32px;
+	}
+
+	header h1 {
+		text-align: center;
+	}
+
+	header ul {
+		width: 80%;
+		margin:0 auto;
+		font-size: 0;
+	}
+
+	header ul li {
+		width: 25%;
+	}
+
+	header ul a:link,
+	header ul a:visited {
+		display: block;
+		position: relative;
+		width: 100%;
+		padding: 15px 0 24px;
+		border-left: 1px solid #fff;
+		background: #000 url(img/arrow_under.gif) no-repeat center bottom 10px;
+		color: #fff;
+		font-size: 16px;
+		letter-spacing: 3px;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	header ul a:hover,
+	header ul a:focus {
+		background-color: #4d4d4d;
+	}
+
+	header ul li:first-child a {
+		border-left: none;
+		border-radius: 0 0 0 10px;
+	}
+
+	header ul li:nth-child(3) a {
+		background-image: url(img/arrow_right.gif);
+	}
+
+	header ul li:last-child a {
+		border-radius: 0 10px 0 0;
+	}
+
+	.nav_external img {
+		margin-left: 5px;
+		vertical-align: middle;
+	}
+
+	main {
+		margin-top: 32px;
+	}
+
 /* for max-width 768px */
 
 	@media only screen and (max-width: 768px) {
@@ -183,4 +244,34 @@
 			padding-right: 10%;
 			padding-left: 10%;
 		}
+
+		/* Aグループ */
+
+		header h1 {
+			width: 80%;
+			margin: 0 auto 40px;
+		}
+
+		header ul li {
+			width: 100%;
+			margin-top: 16px;
+		}
+
+		header ul li:first-child {
+			margin-top: 0;
+		}
+
+		header ul a:link,
+		header ul a:visited {
+			border: none;
+		}
+
+		header ul li:first-child a {
+			border-radius: 10px 0 0 0;
+		}
+
+		header ul li:last-child a {
+			border-radius: 0 0 10px 0;
+		}
+
 	}
